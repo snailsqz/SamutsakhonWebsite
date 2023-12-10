@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad:wght@500&family=Noto+Sans+JP:wght@200&family=Noto+Sans+Thai&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Noto Sans Thai", sans-serif;
+  transition: all 0.4s;
 }
 body {
   height: 100vh;
@@ -18,9 +20,17 @@ header {
 }
 header a {
   font-weight: 500;
-  font-size: large;
+  font-size: 30px;
   text-decoration: none;
   color: white;
+  text-shadow: 1px 1px #fe574f;
+  font-family: "Afacad", sans-serif;
+}
+
+header a:hover {
+  transform: scale(1.2);
+  background-color: #6872b38c;
+  border-radius: 12px;
 }
 
 .main {
@@ -63,6 +73,16 @@ header a {
   color: rgba(0, 0, 0, 0.568);
 }
 
+.secondbox div:nth-of-type(1) {
+  height: 50%;
+}
+.secondbox div:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+
 img {
   position: relative;
   height: 100%;
@@ -71,4 +91,147 @@ img {
   border-radius: 8px;
   z-index: -1;
   border: 3px solid #ffad84;
+}
+
+button {
+  position: relative;
+  width: 100px;
+  height: 60px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #9ad0c2;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 1px solid #f2f1eb;
+  font-family: "Afacad", sans-serif;
+}
+
+button:hover {
+  background-color: #2d9596;
+}
+
+.fade-in {
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.text-focus-in {
+  -webkit-animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.focus-in-contract-bck {
+  -webkit-animation: focus-in-contract-bck 0.5s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: focus-in-contract-bck 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@-webkit-keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+    transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(12px);
+    transform: translateZ(12px);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+    transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(12px);
+    transform: translateZ(12px);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+.tracking-in-contract {
+  -webkit-animation: tracking-in-contract 0.8s
+    cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+@-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
 }
