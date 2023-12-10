@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad:wght@500&family=Noto+Sans+JP:wght@200&family=Noto+Sans+Thai&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans Thai", sans-serif;
+  transition: all 0.4s;
+}
+body {
+  height: 100vh;
+  background-color: #7c81ad;
+}
+header {
+  padding: 20px 30px 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #4b527e;
+  border-radius: 20px;
+  border: 3px solid #ffad84;
+}
+header a {
+  font-weight: 500;
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  text-shadow: 1px 1px #fe574f;
+  font-family: "Afacad", sans-serif;
+}
+
+header a:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  padding: 30px 20px 30px 20px;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  font-family: "Afacad", sans-serif;
+}
+
+.main {
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.mainbox {
+  display: flex;
+  gap: 10px;
+  height: 100%;
+}
+
+.firstbox {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0px 0px 0px;
+}
+
+.firstbox div:nth-of-type(1) {
+  height: 40%;
+  width: 100%;
+}
+.firstbox div:nth-of-type(2) {
+  height: 60%;
+  width: 100%;
+}
+
+img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  z-index: -1;
+}
+
+.secondbox {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0px 0px 0px;
+}
+
+.secondbox > div:nth-of-type(1) {
+  width: 100%;
+  height: 59%;
+}
+
+.thirdbox {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  gap: 10px;
+}
+
+.thirdbox div:nth-of-type(1) {
+  width: 45%;
+  height: 100%;
+}
+
+.thirdbox div:nth-of-type(2) {
+  width: 55%;
+  height: 100%;
+}
+
+.textinimg {
+  position: absolute;
+  left: 20px;
+  bottom: 60px;
+  color: white;
+  font-size: 26px;
+  font-weight: 700;
+  text-shadow: 2px 2px #fe574f;
+}
+
+.textinimg2 {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.877);
+}
+.firstbox a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ffad84;
+  border-radius: 12px;
+}
+
+.firstbox a::before {
+  content: "";
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+}
+
+.secondbox a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ffad84;
+  border-radius: 12px;
+}
+
+.secondbox a::before {
+  content: "";
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
+}
+
+.firstbox a:hover {
+  transform: scale(1.01);
+}
+
+.secondbox a:hover {
+  transform: scale(1.01);
+}
